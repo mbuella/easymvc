@@ -1,25 +1,25 @@
 <?php
 // controllers.php
 	function home_action() {
-		require_once('views/home.php');
+		require_once('../src/views/home.php');
 	}
 
 	function user_action() {
 		if (isset($_SESSION['user'])) {
 	    	$account = getAccount($_SESSION['user']['code_name']);
-	    	require_once('views/info.php');
+	    	require_once('../src/views/info.php');
 		}
 		else {
 			//send a not allowed header
 	    	header('HTTP/1.1 401 Unauthorized');
 	    	//display error 401 custom message
-	    	require_once('messages/http/error_401.php');
+	    	require_once('../src/messages/http/error_401.php');
 		}
 	}
 
 	function count_action() {
 	    $count = countAccount();
-	    require_once('views/count.php') ;
+	    require_once('../src/views/count.php') ;
 	}
 
 	function signin_action() {
@@ -62,7 +62,7 @@
 			unset($_SESSION['message']);
 		}
 
-	    require_once('views/signin.php');
+	    require_once('../src/views/signin.php');
 	}
 
 	function signup_action () {
@@ -118,7 +118,7 @@
 				break;
     		}
     	}
-		require_once('views/signup.php');
+		require_once('../src/views/signup.php');
 	}
 
 	function signout_action() {

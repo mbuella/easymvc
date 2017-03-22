@@ -1,8 +1,15 @@
-RewriteEngine on
+RewriteEngine On
+# WARNING!!! Change when copied to another workplace
+RewriteBase /easymvc/
 
-# if a directory or a file exists, use it directly
+RewriteCond %{THE_REQUEST} /public/([^\s?]*) [NC]
+RewriteRule ^ %1 [L,NE,R=302]
+
+# redirect from ROOT to public folder
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+
+# exclude filter of files (css/js)
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 
-# otherwise forward it to index.php
-RewriteRule . index.php
+# redirect all requests to public/index.php
+RewriteRule ^(.*)$ public/ [L]

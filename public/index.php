@@ -2,14 +2,14 @@
 	// index.php
 
 	// load and initialize any global libraries
-	require_once 'models/model.php';
-	require_once 'controllers/controllers.php';
+	require_once '../src/models/model.php';
+	require_once '../src/controllers/controllers.php';
 
 	/*** URI ROUTES ***/
 	// route the request internally
 	$uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 	//root uri - update accordingly when in a different directory
-	$index = '/mbuella/git/playground/easy_mvc/';
+	$index = '/easymvc/';
 
 	/** Routing starts here **/
 	switch ($uri) {

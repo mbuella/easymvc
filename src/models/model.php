@@ -5,7 +5,7 @@
 	session_start();
 
     $account_dir = json_decode(
-    		file_get_contents('data/accounts.json'),
+    		file_get_contents('../src/data/accounts.json'),
     		true
     	);
 

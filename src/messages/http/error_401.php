@@ -10,4 +10,4 @@
 
 <?php $content = ob_get_clean() ?>
 
-<?php include 'views/layout.php' ?>
+<?php include '../src/templates/layout.php' ?>
