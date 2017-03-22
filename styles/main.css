@@ -1,0 +1,44 @@
+header > nav.navbar {
+    border-radius: 0;
+    margin: 0;
+}
+
+main.container {
+    padding: 20px;
+}
+
+main.jumbotron {
+    margin: 0;
+}
+
+footer {
+    padding: 20px;
+    background-color: pink;
+}
+
+/******/
+
+#signin_form,
+#signup_form {
+    width: 30%;
+    margin: 20px auto;
+}
+
+#signin_form h3,
+#signup_form h3 {
+    margin: 30px 0;
+}
+
+#signin_form > .form-group,
+#signup_form .form-group {
+    text-align: left;
+}
+
+#signup_form {
+    width: 60%;
+}
+
+#gender-label {
+    display: block;
+}
+

@@ -1,0 +1,42 @@
+[
+    {
+        "code_name": "php2017",
+        "first_name": "Marlon",
+        "last_name": "Buella",
+        "address": "Project 4, Quezon City",
+        "gender": "male",
+        "password": "abc123"
+    },
+    {
+        "code_name": "java1992",
+        "first_name": "Juan",
+        "last_name": "dela Cruz",
+        "address": "Tondo, Manila",
+        "gender": "male",
+        "password": "janjalanjan"
+    },
+    {
+        "code_name": "mariaCutie",
+        "first_name": "Maria",
+        "last_name": "delos Santos",
+        "address": "Calamba, Laguna",
+        "gender": "female",
+        "password": "cutiecutecute"
+    },
+    {
+        "code_name": "digong",
+        "first_name": "Rodrigo",
+        "last_name": "Duterte",
+        "address": "Davao city",
+        "gender": "male",
+        "password": "1234"
+    },
+    {
+        "code_name": "mbuella",
+        "first_name": "Marlon",
+        "last_name": "Buella",
+        "address": "hehehe",
+        "gender": "male",
+        "password": "bicolano"
+    }
+]
